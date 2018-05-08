@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>qml/atomicSwap.qml</file>
+        <file>pages/atomicSwap.html</file>
+        <file>pages/ootable/ootable.html</file>      
+    </qresource>
+</RCC>
