@@ -3,12 +3,15 @@
 
 #include <QObject>
 #include <QQmlApplicationEngine>
+#include "documenthandler.h"
 
 class Backend : public QObject
 {
     Q_OBJECT
 private: 
     QQmlApplicationEngine& engine;
+    DocumentHandler* docHandler;
+
 public:
     explicit Backend(QQmlApplicationEngine& engine, QObject *parent = 0);
     

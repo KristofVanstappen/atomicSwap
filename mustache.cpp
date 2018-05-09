@@ -30,6 +30,7 @@ QString Mustache::renderTemplate(const QString& templateString, const QVariantHa
 
 QString escapeHtml(const QString& input)
 {
+	return input;
 	QString escaped(input);
 	for (int i=0; i < escaped.count();) {
 		const char* replacement = 0;

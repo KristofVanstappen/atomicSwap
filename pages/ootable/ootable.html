@@ -19,44 +19,11 @@
     </style>
 </head>
 <body>
-    <h1>Jimber Atomic swap test: {{test}}</h1>
-   <form>
-        <fieldset>
-
-                <legend>New Atomic swap hallo {{test}} </legend>
-                
-                <input type="radio" name="buySell" value="buy" checked>Buy<br>
-                <input type="radio" name="buySell" value="sell">Sell<br>
-                <br>
-
-                <label for="male">Amount</label>
-                <input type="number" name="amount">
-                <select>
-                  <option value="bitcoin">Bitcoin</option>
-                  <option value="ethereum">Ethereum</option>
-                  <option value="threefold">Threefold</option>
-                </select>
-                <br>
-                                  
-                <label for="male">Source wallet</label>
-                <input type="text" name="sourceWallet" value="sourceWallet" disabled>
-                <span>( Please deposit the amount here. )</span><br> <br>
-                
-                <label for="male">Value</label>
-                <input type="number" name="value">
-                <select>
-                  <option value="bitcoin">Bitcoin</option>
-                  <option value="ethereum">Ethereum</option>
-                  <option value="threefold">Threefold</option>
-                </select><br>
-                
-                 <label for="male">Destination wallet</label>
-                 <input name="destinaionWallet">
-                  <br><br>
-                  <input type="submit" value="Submit">   
-              </fieldset>
-            </form>
-  </form>
+    <h1>Jimber Atomic swap test: {{tekst}}</h1>
+ 
+    <table style="width:100%">
+       {{ROWS}}
+        </table>
 
     
 </body>

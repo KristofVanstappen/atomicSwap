@@ -9,7 +9,7 @@ HEADERS += \
     backend.h \
     documenthandler.h \
     mustache.h \
-    page.h
+    pages/Page.h
 
 SOURCES += \
     atomicSwap.cpp \

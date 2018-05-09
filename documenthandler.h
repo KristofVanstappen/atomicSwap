@@ -56,7 +56,7 @@
 #include <QTextCursor>
 #include <QUrl>
 
-#include "Page.h"
+#include "pages/Page.h"
 
 QT_BEGIN_NAMESPACE
 class QTextDocument;

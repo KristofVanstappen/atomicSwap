@@ -68,6 +68,7 @@ DocumentHandler::DocumentHandler(QObject *parent)
     , m_cursorPosition(-1)
     , m_selectionStart(0)
     , m_selectionEnd(0)
+    , m_fileUrl("")
 {
 }
 
@@ -279,21 +280,25 @@ QUrl DocumentHandler::fileUrl() const
 
 void DocumentHandler::loadTemplated(const QUrl &fileUrl, Page* page)
 {
-    qInfo() << "doc hanlder &23";
-    if (fileUrl == m_fileUrl)
-        return;
-
+    qInfo() << "load templated ";
+    qInfo() << "furl" <<  fileUrl ;
+   // qInfo() << "m furl" << m_fileUrl;
+  //  if (fileUrl == m_fileUrl)
+    //    return;
+  
     QQmlEngine *engine = qmlEngine(this);
     if (!engine) {
         qWarning() << "load() called before DocumentHandler has QQmlEngine";
         return;
     }
+  qInfo() << "load templated mid ";
     QString pageContent;
     pageContent = page->getContent();
     qInfo() << pageContent;
     m_fileUrl = fileUrl;
     emit fileUrlChanged();
    emit loaded(pageContent);
+    qInfo() << "load templated ended ";
     //return page;
 }
 
